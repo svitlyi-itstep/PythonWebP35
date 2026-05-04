@@ -84,6 +84,7 @@ unit.hp -= 10
 ## Довідкові матеріали:
 - Об’єктно-орієнтоване програмування (ООП) в Python — https://acode.com.ua/object-oriented-programming-python/
 - ООП в Python — http://ruslan.rv.ua/python-essential/oop/classes.html
+- Що означає self у Python — https://www.it-notes.wiki/python/what-does-self-mean-in-python/
 - Методи \_\_str\_\_() та \_\_repr\_\_() у Python — https://www.it-notes.wiki/python/methods-str-and-repr/
 - Декоратор @property в Python — https://acode.com.ua/property-decorator-python/
 - Python + Pygame. Урок 1. — https://devzone.org.ua/post/python-pygame-urok-1
