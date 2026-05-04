@@ -24,29 +24,32 @@ class Unit:
     hp = 100
 
     # Конструктор
-    def __init__(self, name, hp):
+    def __init__(self, name, hp=100):
         self.name = name
         self.hp = hp
 
     # Конвертація у рядок (user-friendly)
     def __str__(self):
-        return f"{self.name=} with {self.hp}HP"
+        return f"{self.name} with {self.hp}HP"
 
     # Конвертація у рядок (debug)
     def __repr__(self):
-        return f"Unit({self.name=}, {self.hp})"
+        return f"Unit({self.name=}, {self.hp=})"
 
     def is_alive(self):
         return self.hp > 0
 
-    def take_damage(damage):
+    def take_damage(self, damage):
         self.hp -= damage
 ```
 
 Створити об'єкт на основі класу можна наступним чином:
 ```python
-unit = Unit("Unit 1", 100)
-print(unit)
+unit = Unit("Unit 1", 75)
+print(unit) # Unit 1 with 75HP
+
+unit = Unit("Unit 2", 100)
+print(repr(unit)) # Unit(self.name="Unit 2", self.hp=100)
 ```
 
 ### Інкапсуляція у Python
@@ -81,6 +84,7 @@ unit.hp -= 10
 ## Довідкові матеріали:
 - Об’єктно-орієнтоване програмування (ООП) в Python — https://acode.com.ua/object-oriented-programming-python/
 - ООП в Python — http://ruslan.rv.ua/python-essential/oop/classes.html
+- Методи \_\_str\_\_() та \_\_repr\_\_() у Python — https://www.it-notes.wiki/python/methods-str-and-repr/
 - Декоратор @property в Python — https://acode.com.ua/property-decorator-python/
 - Python + Pygame. Урок 1. — https://devzone.org.ua/post/python-pygame-urok-1
 - Pygame Cheat Sheet — https://medium.com/@amit25173/pygame-cheat-sheet-311cfc7b6ce8
