@@ -42,6 +42,7 @@ Django використовують у виробництві такі комп�
 | Disqus | Система коментарів |
 | Mozilla | Сайти та сервіси |
 | National Geographic | Веб-платформа |
+
 <sup><sup>Джерело: https://itproger.com/ua/news/10-samih-populyarnih-saytov-napisannih-na-django</sup></sup>
 
 > Інструкцію зі встановлення Django можна знайти в 

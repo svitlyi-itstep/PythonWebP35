@@ -20,6 +20,7 @@
     - [Запуск на іншому порті](#запуск-на-іншому-порті)
     - [Запуск із доступом з інших пристроїв у мережі](#запуск-із-доступом-з-інших-пристроїв-у-мережі)
   - [Шпаргалка команд](#шпаргалка-команд)
+  - [Довідкові матеріали](#довідкові-матеріали)
   
 ## Встановлення Python
 
@@ -50,10 +51,8 @@ sudo apt install python3 python3-pip python3-venv
 
 ```bash
 python --version
-# Python 3.12.x
 
 pip --version
-# pip 24.x from ...
 ```
 
 ---
@@ -112,7 +111,6 @@ pip install django
 
 ```bash
 django-admin --version
-# 5.x.x
 ```
 
 Бажано зберегайте залежності проєкту після кожного доданого модуля для більш простого розгортання проєкту на інших пристроях:
@@ -134,7 +132,7 @@ pip install -r requirements.txt
 Для завантаження всіх базових файлів, необхідних для роботи Django, введіть наступну команду:
 
 ```bash
-django-admin startproject config .
+django-admin startproject project_name .
 ```
 
 > Крапка `.` в кінці — обов'язкова! Вона вказує Django створити файли проєкту в поточній папці, а не у вкладеній.
@@ -143,7 +141,7 @@ django-admin startproject config .
 
 ```
 my_django_project/
-├── config/
+├── project_name/
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py      ← головні налаштування
@@ -160,13 +158,13 @@ my_django_project/
 Django-проєкт може містити кілька застосунків (apps). Кожен застосунок відповідає за окрему функціональну область.
 
 ```bash
-python manage.py startapp library
+python manage.py startapp app_name
 ```
 
-Після цього з'явиться папка `library/`:
+Після цього з'явиться папка `app_name/`:
 
 ```
-library/
+app_name/
 ├── migrations/
 │   └── __init__.py
 ├── __init__.py
@@ -180,10 +178,10 @@ library/
 
 ### Підключення застосунку до проєкту
 
-Відкрийте `config/settings.py` і додайте назву вашого застосунку до `INSTALLED_APPS`:
+Відкрийте `project_name/settings.py` і додайте назву вашого застосунку до `INSTALLED_APPS`:
 
 ```python
-# config/settings.py
+# project_name/settings.py
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -192,7 +190,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'library',  # ← додайте цей рядок
+    'app_name',  # ← додайте цей рядок
 ]
 ```
 
@@ -205,15 +203,15 @@ INSTALLED_APPS = [
 ```
 my_django_project/
 │
-├── config/                  ← налаштування проєкту
+├── project_name/            ← налаштування проєкту
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
 │
-├── library/                 ← ваш застосунок
+├── app_name/                ← ваш застосунок
 │   ├── migrations/          ← автозгенеровані міграції БД
 │   ├── templates/           ← HTML-шаблони (створіть вручну)
-│   │   └── library/
+│   │   └── app_name/
 │   │       └── index.html
 │   ├── models.py
 │   ├── views.py
@@ -285,7 +283,7 @@ python manage.py runserver
 Очікуваний вивід:
 
 ```
-Django version 5.x.x, using settings 'config.settings'
+Django version 6.x.x, using settings 'project_name.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
@@ -331,8 +329,8 @@ deactivate                           # деактивувати
 
 # Django
 pip install django                   # встановити Django
-django-admin startproject config .   # створити проєкт
-python manage.py startapp library    # створити застосунок
+django-admin startproject project_name .   # створити проєкт
+python manage.py startapp app_name    # створити застосунок
 python manage.py runserver           # запустити сервер
 
 # База даних
@@ -345,3 +343,7 @@ pip freeze > requirements.txt        # зберегти залежності
 pip install -r requirements.txt      # встановити із файлу
 ```
 
+## Довідкові матеріали
+- How to install Django — https://docs.djangoproject.com/en/6.0/topics/install/
+- Встановлення Django — https://w3schoolsua.github.io/django/django_install_django.html#gsc.tab=0
+- Розгортання та налаштування продакшн-сервера для Django — https://thehost.ua/ua/wiki/technology/soft/django-deployment
