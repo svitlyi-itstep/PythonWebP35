@@ -9,4 +9,4 @@
 2. [Лямбда-функції](/2_Lambda-functions/)
 3. [ООП у Python](/3_OOP/)
 4. [Патерн MVC/MVT](/4_MVC/)
-5. Фреймворки. Використання Django
+5. [Фреймворк Django](/5_Django/)
