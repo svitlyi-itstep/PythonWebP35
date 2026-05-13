@@ -609,3 +609,8 @@ my_project/
     ├── views.py
     └── urls.py
 ```
+
+## Довідкові матеріали
+- Writing views — https://docs.djangoproject.com/en/6.0/topics/http/views/
+- URL dispatcher — https://docs.djangoproject.com/en/6.0/topics/http/urls/
+- The Django template language — https://docs.djangoproject.com/en/6.0/ref/templates/language/

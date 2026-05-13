@@ -347,3 +347,6 @@ pip install -r requirements.txt      # встановити із файлу
 - How to install Django — https://docs.djangoproject.com/en/6.0/topics/install/
 - Встановлення Django — https://w3schoolsua.github.io/django/django_install_django.html#gsc.tab=0
 - Розгортання та налаштування продакшн-сервера для Django — https://thehost.ua/ua/wiki/technology/soft/django-deployment
+- Writing your first Django app, part 1 — https://docs.djangoproject.com/en/6.0/intro/tutorial01/
+- Writing your first Django app, part 2 — https://docs.djangoproject.com/en/6.0/intro/tutorial02/
+- Writing your first Django app, part 3 — https://docs.djangoproject.com/en/6.0/intro/tutorial03/
