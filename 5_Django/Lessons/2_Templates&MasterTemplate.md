@@ -288,6 +288,9 @@ context = {
 | `first` | `{{ skills\|first }}` | `Python` |
 | `last` | `{{ skills\|last }}` | `CSS` |
 
+> Повний перелік доступних фільтрів можна знайти в [офіційній документації](https://docs.djangoproject.com/en/6.0/ref/templates/builtins/#built-in-filter-reference).
+
+
 ### Практичний приклад із фільтрами
 
 ```python
@@ -508,5 +511,5 @@ about.html
 ## Довідкові матеріали
 - Templates — https://docs.djangoproject.com/en/6.0/topics/templates/
 - The Django template language — https://docs.djangoproject.com/en/6.0/ref/templates/language/
-- 
+- Built-in template tags and filters — https://docs.djangoproject.com/en/6.0/ref/templates/builtins/#
 - Django Add Master Template — https://w3schoolsua.github.io/django/django_master_template_en.html#gsc.tab=0
