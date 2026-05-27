@@ -8,9 +8,9 @@
 
 ## Варіанти виконання
 
-| **Template-based (MVT)** | **Django REST API + Frontend** |
+| ![Static Badge](https://img.shields.io/badge/Template--based_(MVT)-purple?style=for-the-badge) | ![Static Badge](https://img.shields.io/badge/Django%20REST%20API-red?style=for-the-badge)|
 |---|---|
-| Django-додаток з рендером сторінок на сервері через шаблонізатор Django Templates | Django REST Framework (DRF) як бекенд + окремий фронтенд (HTML/JS або React) |
+|  Django-додаток з рендером сторінок на сервері через шаблонізатор Django Templates | Django REST Framework (DRF) як бекенд + окремий фронтенд (HTML/JS або React) |
 
 Обидва варіанти є рівноцінними. Варіант обирається студентом самостійно.
 
@@ -26,10 +26,10 @@
 
 ### CRUD
 Для кожної основної моделі реалізувати повний набір операцій:
-- **Create** — створення запису
-- **Read** — перегляд списку та деталей запису
-- **Update** — редагування запису
-- **Delete** — видалення запису
+- ![Static Badge](https://img.shields.io/badge/CREATE-green?style=flat) — створення запису
+- ![Static Badge](https://img.shields.io/badge/READ-yellow?style=flat) — перегляд списку та деталей запису
+- ![Static Badge](https://img.shields.io/badge/UPDATE-blue?style=flat) — редагування запису
+- ![Static Badge](https://img.shields.io/badge/DELETE-red?style=flat) — видалення запису
 
 ### Складні запити (мінімум 2)
 Реалізувати принаймні два з наведених варіантів:
