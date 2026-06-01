@@ -5,3 +5,4 @@
 3. [Роутинг та робота з URL](./3_Routing.md)
 4. [Моделі та ORM](./4_Models.md)
 5. [Форми](./5_Forms.md)
+6. [REST Framework](./6_REST_Framework.md)

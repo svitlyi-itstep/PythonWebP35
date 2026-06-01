@@ -21,6 +21,7 @@
 7. [Робота з View, шаблонами та роутингом](/5_Django/Homeworks/Homework_7.md)
 8. [Параметри url та запитів](/5_Django/Homeworks/Homework_8.md)
 9. [Міні-проєкт "Розклад занять"](/5_Django/Homeworks/Homework_9.md)
+10. [REST API для симуляції боїв персонажів](/5_Django/Homeworks/Homework_10.md)
 
 
 **🢂 [Завдання на фінальний проєкт](/FinalProject.md) 🢀**
